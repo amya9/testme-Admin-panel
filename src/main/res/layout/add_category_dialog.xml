@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+     android:background="@drawable/rounded_box"
+    android:backgroundTint="@android:color/white" >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/add_image"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@android:color/darker_gray"
+        android:src="@drawable/add_image"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tap above to select your image" />
+
+    <EditText
+        android:id="@+id/add_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:elevation="1dp"
+        android:layout_margin="16dp"
+        android:padding="8dp"
+        android:hint="category name"
+        android:background="@drawable/edittext_rc"
+        android:backgroundTint="@android:color/white"
+        android:inputType="textPersonName"
+         />
+         <Button
+             android:id="@+id/add_btn"
+             android:layout_width="150dp"
+             android:layout_height="wrap_content"
+             android:background="@drawable/button_rc"
+             android:text="add"
+             android:layout_marginBottom="16dp"
+             android:layout_gravity="center"
+             android:textColor="@android:color/white"
+             android:textSize="18sp"
+             android:textStyle="bold"
+             />
+
+</LinearLayout>
